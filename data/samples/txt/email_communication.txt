@@ -1,0 +1,320 @@
+EMAIL & COMMUNICATION TROUBLESHOOTING / SỬA LỖI EMAIL & LIÊN LẠC
+
+==================== OUTLOOK ISSUES ====================
+
+English:
+Common Microsoft Outlook problems and solutions:
+
+1. Outlook won't open / keeps crashing:
+   - Start Outlook in Safe Mode: Hold Ctrl while opening, or run "outlook.exe /safe"
+   - Disable add-ins: File > Options > Add-ins > Manage COM Add-ins
+   - Create new Outlook profile: Control Panel > Mail > Show Profiles > Add
+   - Repair Office installation
+   - Run Outlook diagnostics: support.microsoft.com/scanpst
+
+2. Cannot send or receive emails:
+   - Check internet connection
+   - Verify account settings: File > Account Settings
+   - Check if mailbox is full (delete old emails)
+   - Disable antivirus email scanning temporarily
+   - Test with Outlook safe mode
+   - Check server settings with email provider
+
+3. Outlook is slow or freezing:
+   - Compact mailbox: Right-click folder > Properties > Advanced > Compact Now
+   - Archive old emails: File > Cleanup Tools > Archive
+   - Reduce mailbox size (delete large attachments)
+   - Disable RSS feeds and shared calendars
+   - Turn off cached mode temporarily
+   - Repair PST/OST file with SCANPST.EXE
+
+4. Emails stuck in Outbox:
+   - Go to Outbox folder
+   - Delete problematic email (especially large attachments)
+   - Restart Outlook
+   - Check if you're working offline (Send/Receive tab)
+
+5. Search not working:
+   - Rebuild search index: Control Panel > Indexing Options > Advanced > Rebuild
+   - Check if Outlook is in index: Indexing Options > Modify
+   - Repair Office
+
+6. AutoComplete not working:
+   - Delete NK2 file or AutoComplete cache
+   - File > Options > Mail > Empty Auto-Complete List
+   - Reset autocomplete suggestions
+
+Vietnamese:
+Các vấn đề Outlook thường gặp và giải pháp:
+
+1. Outlook không mở / crash liên tục:
+   - Khởi động Outlook ở Safe Mode: Giữ Ctrl khi mở
+   - Tắt add-ins: File > Options > Add-ins
+   - Tạo profile Outlook mới: Control Panel > Mail > Show Profiles > Add
+   - Sửa chữa Office
+   - Chạy Outlook diagnostics
+
+2. Không gửi hoặc nhận được email:
+   - Kiểm tra kết nối internet
+   - Xác minh cài đặt tài khoản: File > Account Settings
+   - Kiểm tra mailbox có đầy không
+   - Tạm thời tắt antivirus email scanning
+   - Test với Outlook safe mode
+   - Kiểm tra cài đặt server với nhà cung cấp email
+
+3. Outlook chậm hoặc đơ:
+   - Nén mailbox: Click phải folder > Properties > Advanced > Compact Now
+   - Lưu trữ email cũ: File > Cleanup Tools > Archive
+   - Giảm kích thước mailbox
+   - Tắt RSS feeds và shared calendars
+   - Tắt cached mode tạm thời
+   - Sửa file PST/OST bằng SCANPST.EXE
+
+4. Email bị kẹt trong Outbox:
+   - Vào thư mục Outbox
+   - Xóa email có vấn đề
+   - Khởi động lại Outlook
+   - Kiểm tra có đang offline không
+
+5. Tìm kiếm không hoạt động:
+   - Rebuild search index: Control Panel > Indexing Options > Advanced > Rebuild
+   - Kiểm tra Outlook có trong index không
+   - Sửa chữa Office
+
+6. AutoComplete không hoạt động:
+   - Xóa file NK2 hoặc AutoComplete cache
+   - File > Options > Mail > Empty Auto-Complete List
+
+==================== GMAIL ISSUES ====================
+
+English:
+Fixing Gmail problems:
+
+1. Cannot access Gmail:
+   - Check if Gmail is down: downdetector.com
+   - Clear browser cache and cookies
+   - Try incognito/private mode
+   - Try different browser
+   - Check internet connection
+   - Disable browser extensions
+
+2. Not receiving emails:
+   - Check Spam folder
+   - Check filters: Settings > Filters and Blocked Addresses
+   - Check forwarding settings
+   - Check storage quota (15GB free limit)
+   - Delete old emails or upgrade storage
+   - Check if sender is not blocked
+
+3. Cannot send emails:
+   - Check attachment size (25MB limit)
+   - Use Google Drive for large files
+   - Check if recipient address is correct
+   - Check daily sending limit (500 emails/day for free accounts)
+   - Verify account (add phone number)
+
+4. Gmail search not working:
+   - Use advanced search operators
+   - Check spelling
+   - Search in All Mail instead of specific folder
+   - Clear browser cache
+
+5. Slow performance:
+   - Disable chat
+   - Reduce inbox density: Settings > Display density > Compact
+   - Use basic HTML version: gmail.com/mail/u/0/h
+   - Clear browser cache
+   - Disable labs features
+
+6. Account security issues:
+   - Enable 2-Step Verification
+   - Review recent security activity
+   - Check connected devices and apps
+   - Update recovery email and phone
+   - Use app-specific passwords for third-party apps
+
+Vietnamese:
+Sửa lỗi Gmail:
+
+1. Không truy cập được Gmail:
+   - Kiểm tra Gmail có bị down không
+   - Xóa cache và cookies trình duyệt
+   - Thử chế độ incognito
+   - Thử trình duyệt khác
+   - Kiểm tra kết nối internet
+   - Tắt extensions trình duyệt
+
+2. Không nhận được email:
+   - Kiểm tra thư mục Spam
+   - Kiểm tra filters: Settings > Filters and Blocked Addresses
+   - Kiểm tra cài đặt forwarding
+   - Kiểm tra dung lượng (giới hạn 15GB miễn phí)
+   - Xóa email cũ hoặc nâng cấp
+   - Kiểm tra người gửi có bị chặn không
+
+3. Không gửi được email:
+   - Kiểm tra kích thước file đính kèm (giới hạn 25MB)
+   - Dùng Google Drive cho file lớn
+   - Kiểm tra địa chỉ người nhận
+   - Kiểm tra giới hạn gửi hàng ngày (500 email/ngày)
+   - Xác minh tài khoản
+
+4. Tìm kiếm Gmail không hoạt động:
+   - Dùng advanced search operators
+   - Kiểm tra chính tả
+   - Tìm trong All Mail thay vì folder cụ thể
+   - Xóa browser cache
+
+5. Hiệu suất chậm:
+   - Tắt chat
+   - Giảm inbox density: Settings > Display density > Compact
+   - Dùng phiên bản HTML cơ bản
+   - Xóa browser cache
+   - Tắt labs features
+
+6. Vấn đề bảo mật tài khoản:
+   - Bật 2-Step Verification
+   - Xem lại hoạt động bảo mật gần đây
+   - Kiểm tra thiết bị và apps kết nối
+   - Cập nhật email và phone khôi phục
+   - Dùng app-specific passwords
+
+==================== ZOOM / VIDEO CONFERENCING ====================
+
+English:
+Troubleshooting video conferencing issues:
+
+Audio problems:
+1. Cannot hear others:
+   - Check if muted in Zoom
+   - Check system volume
+   - Select correct audio device: Settings > Audio > Speaker
+   - Test speaker: Settings > Audio > Test Speaker
+   - Update audio drivers
+
+2. Others cannot hear you:
+   - Check if microphone is muted
+   - Select correct microphone: Settings > Audio > Microphone
+   - Test microphone: Settings > Audio > Test Mic
+   - Check microphone permissions in Windows
+   - Try different USB port for external mic
+   - Update audio drivers
+
+3. Echo or feedback:
+   - Use headphones
+   - Mute when not speaking
+   - Reduce speaker volume
+   - Move microphone away from speakers
+
+Video problems:
+1. Camera not working:
+   - Check if camera is enabled in Zoom
+   - Select correct camera: Settings > Video > Camera
+   - Check camera privacy settings in Windows
+   - Close other apps using camera
+   - Update camera drivers
+   - Restart computer
+
+2. Poor video quality:
+   - Check internet speed (need 3+ Mbps for HD video)
+   - Enable HD video: Settings > Video > Enable HD
+   - Turn off other participants' videos
+   - Close bandwidth-heavy applications
+   - Use wired connection instead of WiFi
+
+Connection problems:
+1. Meeting disconnects frequently:
+   - Check internet stability
+   - Use wired connection
+   - Close unnecessary applications
+   - Update Zoom to latest version
+   - Try different network
+
+2. Slow or lagging:
+   - Turn off video
+   - Lower video quality
+   - Close other applications
+   - Check for network congestion
+   - Restart router
+
+Screen sharing issues:
+1. Cannot share screen:
+   - Update Zoom
+   - Check screen sharing permissions
+   - Try different sharing option (desktop vs. window)
+   - Restart Zoom
+
+2. Choppy screen sharing:
+   - Optimize for full screen video clip
+   - Reduce video quality
+   - Close unnecessary applications
+   - Check CPU usage
+
+Vietnamese:
+Khắc phục sự cố họp video:
+
+Vấn đề âm thanh:
+1. Không nghe được người khác:
+   - Kiểm tra có bị tắt tiếng trong Zoom không
+   - Kiểm tra âm lượng hệ thống
+   - Chọn đúng thiết bị audio: Settings > Audio > Speaker
+   - Test loa: Settings > Audio > Test Speaker
+   - Cập nhật audio drivers
+
+2. Người khác không nghe được bạn:
+   - Kiểm tra micro có bị tắt không
+   - Chọn đúng micro: Settings > Audio > Microphone
+   - Test micro: Settings > Audio > Test Mic
+   - Kiểm tra quyền micro trong Windows
+   - Thử cổng USB khác cho micro ngoài
+   - Cập nhật audio drivers
+
+3. Tiếng vọng hoặc phản hồi:
+   - Dùng tai nghe
+   - Tắt tiếng khi không nói
+   - Giảm âm lượng loa
+   - Di chuyển micro xa loa
+
+Vấn đề video:
+1. Camera không hoạt động:
+   - Kiểm tra camera có được bật trong Zoom không
+   - Chọn đúng camera: Settings > Video > Camera
+   - Kiểm tra cài đặt quyền riêng tư camera
+   - Đóng ứng dụng khác đang dùng camera
+   - Cập nhật camera drivers
+   - Khởi động lại máy tính
+
+2. Chất lượng video kém:
+   - Kiểm tra tốc độ internet (cần 3+ Mbps cho HD)
+   - Bật HD video: Settings > Video > Enable HD
+   - Tắt video của người tham gia khác
+   - Đóng ứng dụng chiếm băng thông
+   - Dùng kết nối dây thay vì WiFi
+
+Vấn đề kết nối:
+1. Meeting bị ngắt kết nối thường xuyên:
+   - Kiểm tra độ ổn định internet
+   - Dùng kết nối dây
+   - Đóng ứng dụng không cần thiết
+   - Cập nhật Zoom
+   - Thử mạng khác
+
+2. Chậm hoặc giật lag:
+   - Tắt video
+   - Giảm chất lượng video
+   - Đóng ứng dụng khác
+   - Kiểm tra tắc nghẽn mạng
+   - Khởi động lại router
+
+Vấn đề chia sẻ màn hình:
+1. Không chia sẻ được màn hình:
+   - Cập nhật Zoom
+   - Kiểm tra quyền chia sẻ màn hình
+   - Thử tùy chọn chia sẻ khác
+   - Khởi động lại Zoom
+
+2. Chia sẻ màn hình giật lag:
+   - Tối ưu hóa cho video toàn màn hình
+   - Giảm chất lượng video
+   - Đóng ứng dụng không cần thiết
+   - Kiểm tra CPU usage

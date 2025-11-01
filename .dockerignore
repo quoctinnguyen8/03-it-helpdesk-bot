@@ -1,0 +1,61 @@
+# -----------------------------
+#  Ignore Python build artifacts
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
+
+# -----------------------------
+#  Ignore local virtual environments
+# -----------------------------
+.venv/
+env/
+venv/
+ENV/
+
+# -----------------------------
+#  Ignore dependency / build cache
+# -----------------------------
+*.egg-info/
+.eggs/
+build/
+dist/
+.cache/
+uv.lock.old
+poetry.lock
+pip-wheel-metadata/
+
+# -----------------------------
+#  Ignore development configs and IDE files
+# -----------------------------
+.git/
+.gitignore
+.gitattributes
+.idea/
+.vscode/
+*.swp
+
+# -----------------------------
+#  Ignore test files (optional)
+# -----------------------------
+tests/
+*.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# -----------------------------
+#  Ignore Docker build files themselves
+# -----------------------------
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# -----------------------------
+#  Ignore OS-specific files
+# -----------------------------
+.DS_Store
+Thumbs.db

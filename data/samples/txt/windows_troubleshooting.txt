@@ -1,0 +1,207 @@
+WINDOWS TROUBLESHOOTING GUIDE / HƯỚNG DẪN SỬA LỖI WINDOWS
+
+==================== BLUE SCREEN OF DEATH (BSOD) ====================
+
+English:
+A Blue Screen of Death (BSOD) is a critical error screen displayed by Windows when a fatal system error occurs. Common causes include:
+
+1. Hardware Issues:
+   - Faulty RAM modules
+   - Overheating CPU or GPU
+   - Failing hard drive or SSD
+   - Incompatible or damaged hardware components
+
+2. Driver Problems:
+   - Outdated or corrupted device drivers
+   - Incompatible drivers after Windows update
+
+3. Software Conflicts:
+   - Malware or virus infection
+   - Corrupted system files
+   - Incompatible software
+
+Solutions:
+- Run Windows Memory Diagnostic tool
+- Update all device drivers through Device Manager
+- Run SFC (System File Checker): sfc /scannow
+- Check Event Viewer for error details
+- Boot in Safe Mode to isolate the problem
+- Run CHKDSK to check disk errors: chkdsk /f /r
+
+Vietnamese:
+Màn hình xanh chết chóc (BSOD) là màn hình lỗi nghiêm trọng hiển thị khi Windows gặp lỗi hệ thống. Nguyên nhân phổ biến:
+
+1. Vấn đề phần cứng:
+   - RAM bị lỗi
+   - CPU hoặc GPU quá nhiệt
+   - Ổ cứng hoặc SSD hỏng
+   - Linh kiện không tương thích
+
+2. Vấn đề driver:
+   - Driver thiết bị lỗi thời hoặc bị hỏng
+   - Driver không tương thích sau khi cập nhật Windows
+
+3. Xung đột phần mềm:
+   - Nhiễm virus hoặc malware
+   - File hệ thống bị hỏng
+   - Phần mềm không tương thích
+
+Giải pháp:
+- Chạy công cụ Windows Memory Diagnostic
+- Cập nhật driver qua Device Manager
+- Chạy lệnh SFC: sfc /scannow
+- Kiểm tra Event Viewer để xem chi tiết lỗi
+- Khởi động Safe Mode để cô lập vấn đề
+- Chạy CHKDSK: chkdsk /f /r
+
+==================== SLOW PERFORMANCE ====================
+
+English:
+Windows running slowly can be caused by:
+
+1. Too many startup programs
+   - Solution: Use Task Manager (Ctrl+Shift+Esc) > Startup tab to disable unnecessary programs
+
+2. Insufficient RAM or disk space
+   - Check available RAM and free up disk space
+   - Run Disk Cleanup utility
+
+3. Malware or viruses
+   - Run full system scan with Windows Defender
+   - Use Malwarebytes for additional scanning
+
+4. Fragmented hard drive (HDD only)
+   - Run Disk Defragmenter (not needed for SSDs)
+
+5. Background processes consuming resources
+   - Check Task Manager > Processes tab
+   - End unnecessary processes
+
+Vietnamese:
+Windows chạy chậm có thể do:
+
+1. Quá nhiều chương trình khởi động
+   - Giải pháp: Dùng Task Manager (Ctrl+Shift+Esc) > tab Startup để tắt các chương trình không cần thiết
+
+2. Thiếu RAM hoặc dung lượng đĩa
+   - Kiểm tra RAM khả dụng và giải phóng dung lượng
+   - Chạy công cụ Disk Cleanup
+
+3. Malware hoặc virus
+   - Quét toàn bộ hệ thống với Windows Defender
+   - Dùng Malwarebytes để quét bổ sung
+
+4. Ổ cứng bị phân mảnh (chỉ với HDD)
+   - Chạy Disk Defragmenter (không cần với SSD)
+
+5. Tiến trình nền chiếm tài nguyên
+   - Kiểm tra Task Manager > tab Processes
+   - Tắt các tiến trình không cần thiết
+
+==================== WIFI NOT WORKING ====================
+
+English:
+Steps to fix WiFi connectivity issues:
+
+1. Basic troubleshooting:
+   - Toggle WiFi off and on
+   - Restart your computer
+   - Restart your router/modem
+
+2. Network adapter issues:
+   - Open Device Manager
+   - Find Network Adapters section
+   - Right-click your WiFi adapter > Update driver
+   - Or uninstall and restart to reinstall
+
+3. Reset network settings:
+   - Open Command Prompt as Administrator
+   - Run: netsh winsock reset
+   - Run: netsh int ip reset
+   - Run: ipconfig /release
+   - Run: ipconfig /renew
+   - Run: ipconfig /flushdns
+
+4. Check Windows Network Troubleshooter:
+   - Settings > Network & Internet > Status
+   - Click "Network troubleshooter"
+
+Vietnamese:
+Các bước sửa lỗi WiFi:
+
+1. Khắc phục cơ bản:
+   - Bật tắt WiFi
+   - Khởi động lại máy tính
+   - Khởi động lại router/modem
+
+2. Vấn đề network adapter:
+   - Mở Device Manager
+   - Tìm mục Network Adapters
+   - Click phải WiFi adapter > Update driver
+   - Hoặc gỡ cài đặt và khởi động lại để cài lại
+
+3. Reset cài đặt mạng:
+   - Mở Command Prompt với quyền Administrator
+   - Chạy: netsh winsock reset
+   - Chạy: netsh int ip reset
+   - Chạy: ipconfig /release
+   - Chạy: ipconfig /renew
+   - Chạy: ipconfig /flushdns
+
+4. Kiểm tra Windows Network Troubleshooter:
+   - Settings > Network & Internet > Status
+   - Click "Network troubleshooter"
+
+==================== WINDOWS UPDATE ERRORS ====================
+
+English:
+Common Windows Update error codes and solutions:
+
+Error 0x80070002:
+- Delete contents of C:\Windows\SoftwareDistribution folder
+- Restart Windows Update service
+
+Error 0x80240034:
+- Run Windows Update Troubleshooter
+- Reset Windows Update components
+
+Error 0x8007000E:
+- Insufficient disk space
+- Free up space on C: drive
+
+General solutions:
+1. Run Windows Update Troubleshooter:
+   Settings > Update & Security > Troubleshoot > Windows Update
+
+2. Reset Windows Update components:
+   net stop wuauserv
+   net stop cryptSvc
+   net stop bits
+   net stop msiserver
+   ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
+   net start wuauserv
+   net start cryptSvc
+   net start bits
+   net start msiserver
+
+Vietnamese:
+Các mã lỗi Windows Update và giải pháp:
+
+Lỗi 0x80070002:
+- Xóa nội dung thư mục C:\Windows\SoftwareDistribution
+- Khởi động lại dịch vụ Windows Update
+
+Lỗi 0x80240034:
+- Chạy Windows Update Troubleshooter
+- Reset các thành phần Windows Update
+
+Lỗi 0x8007000E:
+- Thiếu dung lượng đĩa
+- Giải phóng dung lượng ổ C:
+
+Giải pháp chung:
+1. Chạy Windows Update Troubleshooter:
+   Settings > Update & Security > Troubleshoot > Windows Update
+
+2. Reset thành phần Windows Update:
+   [Các lệnh tương tự như trên]

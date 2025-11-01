@@ -1,0 +1,447 @@
+{
+  "document": {
+    "title": "IT Helpdesk Knowledge Base",
+    "version": "1.0",
+    "last_updated": "2025-11-01",
+    "language": "Bilingual (English/Vietnamese)",
+    "categories": [
+      {
+        "id": "network",
+        "name": "Network Troubleshooting",
+        "name_vi": "Khắc Phục Sự Cố Mạng",
+        "icon": "🌐",
+        "priority": "high",
+        "issues": [
+          {
+            "id": "net_001",
+            "title": "No Internet Connection",
+            "title_vi": "Không Có Kết Nối Internet",
+            "severity": "high",
+            "estimated_time": "10-20 minutes",
+            "steps": [
+              {
+                "step": 1,
+                "action": "Check physical connections",
+                "action_vi": "Kiểm tra kết nối vật lý",
+                "details": "Ensure cables are properly connected, check router lights",
+                "commands": []
+              },
+              {
+                "step": 2,
+                "action": "Restart network devices",
+                "action_vi": "Khởi động lại thiết bị mạng",
+                "details": "Power cycle modem and router (30 seconds each)",
+                "commands": []
+              },
+              {
+                "step": 3,
+                "action": "Check IP configuration",
+                "action_vi": "Kiểm tra cấu hình IP",
+                "details": "Verify valid IP address (not 169.254.x.x)",
+                "commands": [
+                  "ipconfig /all",
+                  "ipconfig /release",
+                  "ipconfig /renew"
+                ]
+              },
+              {
+                "step": 4,
+                "action": "Test connectivity",
+                "action_vi": "Kiểm tra kết nối",
+                "details": "Ping router, DNS servers, and external websites",
+                "commands": [
+                  "ping 192.168.1.1",
+                  "ping 8.8.8.8",
+                  "ping google.com"
+                ]
+              },
+              {
+                "step": 5,
+                "action": "Change DNS servers",
+                "action_vi": "Thay đổi DNS servers",
+                "details": "Use Google DNS (8.8.8.8, 8.8.4.4) or Cloudflare (1.1.1.1, 1.0.0.1)",
+                "commands": []
+              }
+            ],
+            "common_causes": [
+              "ISP outage",
+              "Router configuration issues",
+              "Faulty network cable",
+              "DNS problems",
+              "IP conflict"
+            ]
+          },
+          {
+            "id": "net_002",
+            "title": "Slow Internet Speed",
+            "title_vi": "Tốc Độ Internet Chậm",
+            "severity": "medium",
+            "estimated_time": "15-30 minutes",
+            "steps": [
+              {
+                "step": 1,
+                "action": "Run speed test",
+                "action_vi": "Chạy kiểm tra tốc độ",
+                "details": "Use speedtest.net or fast.com",
+                "commands": []
+              },
+              {
+                "step": 2,
+                "action": "Check for bandwidth hoggers",
+                "action_vi": "Kiểm tra ứng dụng chiếm băng thông",
+                "details": "Open Task Manager > Performance > Network",
+                "commands": []
+              },
+              {
+                "step": 3,
+                "action": "Optimize WiFi placement",
+                "action_vi": "Tối ưu vị trí WiFi",
+                "details": "Place router in central location, away from obstacles",
+                "commands": []
+              }
+            ],
+            "common_causes": [
+              "Too many connected devices",
+              "Background downloads/updates",
+              "WiFi interference",
+              "Outdated router firmware",
+              "ISP throttling"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "name": "Security & Antivirus",
+        "name_vi": "Bảo Mật & Diệt Virus",
+        "icon": "🔒",
+        "priority": "critical",
+        "issues": [
+          {
+            "id": "sec_001",
+            "title": "Malware Infection",
+            "title_vi": "Nhiễm Malware",
+            "severity": "critical",
+            "estimated_time": "1-3 hours",
+            "steps": [
+              {
+                "step": 1,
+                "action": "Boot into Safe Mode",
+                "action_vi": "Khởi động vào Safe Mode",
+                "details": "Settings > Recovery > Advanced startup > Restart",
+                "commands": []
+              },
+              {
+                "step": 2,
+                "action": "Run full antivirus scan",
+                "action_vi": "Chạy quét virus toàn bộ",
+                "details": "Windows Security > Full scan or use Malwarebytes",
+                "commands": []
+              },
+              {
+                "step": 3,
+                "action": "Remove suspicious programs",
+                "action_vi": "Gỡ bỏ chương trình đáng ngờ",
+                "details": "Control Panel > Programs and Features",
+                "commands": []
+              },
+              {
+                "step": 4,
+                "action": "Reset browser settings",
+                "action_vi": "Đặt lại cài đặt trình duyệt",
+                "details": "Remove extensions, clear cache, reset to defaults",
+                "commands": []
+              },
+              {
+                "step": 5,
+                "action": "Check startup programs",
+                "action_vi": "Kiểm tra chương trình khởi động",
+                "details": "Task Manager > Startup tab",
+                "commands": [
+                  "msconfig"
+                ]
+              }
+            ],
+            "common_causes": [
+              "Downloading from untrusted sources",
+              "Opening suspicious email attachments",
+              "Clicking malicious links",
+              "Outdated antivirus software",
+              "Disabled security features"
+            ],
+            "prevention_tips": [
+              "Keep antivirus updated",
+              "Don't click suspicious links",
+              "Download only from trusted sources",
+              "Enable Windows Defender",
+              "Regular security scans"
+            ]
+          },
+          {
+            "id": "sec_002",
+            "title": "Phishing Attack",
+            "title_vi": "Tấn Công Lừa Đảo",
+            "severity": "high",
+            "estimated_time": "30 minutes",
+            "red_flags": [
+              "Urgent requests for personal information",
+              "Suspicious sender email address",
+              "Generic greetings (Dear Customer)",
+              "Spelling and grammar errors",
+              "Mismatched URLs (hover to check)",
+              "Too good to be true offers"
+            ],
+            "response_actions": [
+              "Do not click any links",
+              "Do not provide personal information",
+              "Report to IT Security",
+              "Delete the email",
+              "Change passwords if compromised",
+              "Enable 2FA on all accounts"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "backup",
+        "name": "Data Backup & Recovery",
+        "name_vi": "Sao Lưu & Khôi Phục Dữ Liệu",
+        "icon": "💾",
+        "priority": "high",
+        "guidelines": {
+          "backup_rule": {
+            "name": "3-2-1 Rule",
+            "description": "3 copies of data, 2 different media types, 1 offsite backup",
+            "description_vi": "3 bản sao dữ liệu, 2 loại phương tiện khác nhau, 1 bản lưu ngoại tuyến"
+          },
+          "backup_types": [
+            {
+              "type": "Full Backup",
+              "type_vi": "Sao Lưu Toàn Bộ",
+              "description": "Complete copy of all data",
+              "frequency": "Weekly or Monthly",
+              "pros": "Easiest to restore",
+              "cons": "Takes longest time, requires most storage"
+            },
+            {
+              "type": "Incremental Backup",
+              "type_vi": "Sao Lưu Gia Tăng",
+              "description": "Only changed files since last backup",
+              "frequency": "Daily",
+              "pros": "Fastest, uses less storage",
+              "cons": "Restoration takes longer"
+            },
+            {
+              "type": "Differential Backup",
+              "type_vi": "Sao Lưu Khác Biệt",
+              "description": "Changed files since last full backup",
+              "frequency": "Multiple times per week",
+              "pros": "Balance between full and incremental",
+              "cons": "Grows larger over time"
+            }
+          ],
+          "windows_solutions": [
+            {
+              "name": "File History",
+              "description": "Built-in Windows backup for personal files",
+              "location": "Settings > Update & Security > Backup",
+              "backs_up": [
+                "Documents",
+                "Pictures",
+                "Desktop",
+                "Videos",
+                "Music"
+              ],
+              "requires": "External drive or network location"
+            },
+            {
+              "name": "System Image Backup",
+              "description": "Complete snapshot of Windows installation",
+              "location": "Control Panel > Backup and Restore (Windows 7)",
+              "backs_up": [
+                "Operating system",
+                "Programs",
+                "System files",
+                "All data"
+              ],
+              "requires": "External drive or network location"
+            },
+            {
+              "name": "OneDrive",
+              "description": "Cloud backup and sync service",
+              "storage": "5GB free, paid plans available",
+              "features": [
+                "Automatic sync",
+                "Access from anywhere",
+                "File versioning",
+                "Collaboration"
+              ]
+            }
+          ],
+          "cloud_services": [
+            {
+              "name": "Backblaze",
+              "cost": "$7/month",
+              "storage": "Unlimited",
+              "features": [
+                "Continuous backup",
+                "Easy restoration",
+                "Mobile apps"
+              ]
+            },
+            {
+              "name": "Carbonite",
+              "cost": "Personal and business plans",
+              "storage": "Varies by plan",
+              "features": [
+                "Automatic backup",
+                "Anywhere access",
+                "File recovery"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "hardware",
+        "name": "Hardware Troubleshooting",
+        "name_vi": "Khắc Phục Sự Cố Phần Cứng",
+        "icon": "🖥️",
+        "priority": "high",
+        "issues": [
+          {
+            "id": "hw_001",
+            "title": "Computer Won't Start",
+            "title_vi": "Máy Tính Không Khởi Động",
+            "severity": "critical",
+            "estimated_time": "30-60 minutes",
+            "steps": [
+              {
+                "step": 1,
+                "action": "Check power connections",
+                "details": "Verify power cable, outlet, power strip"
+              },
+              {
+                "step": 2,
+                "action": "Perform hard reset",
+                "details": "Unplug power, hold power button 30 seconds"
+              },
+              {
+                "step": 3,
+                "action": "Check battery (laptops)",
+                "details": "Try AC adapter only, battery may be dead"
+              },
+              {
+                "step": 4,
+                "action": "Listen for beep codes",
+                "details": "BIOS beeps indicate hardware issues"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "quick_reference": {
+      "common_commands": [
+        {
+          "command": "ipconfig /all",
+          "description": "Display detailed network configuration",
+          "description_vi": "Hiển thị cấu hình mạng chi tiết"
+        },
+        {
+          "command": "ipconfig /release",
+          "description": "Release current IP address",
+          "description_vi": "Giải phóng địa chỉ IP hiện tại"
+        },
+        {
+          "command": "ipconfig /renew",
+          "description": "Obtain new IP address",
+          "description_vi": "Lấy địa chỉ IP mới"
+        },
+        {
+          "command": "ipconfig /flushdns",
+          "description": "Clear DNS cache",
+          "description_vi": "Xóa bộ nhớ đệm DNS"
+        },
+        {
+          "command": "ping [address]",
+          "description": "Test network connectivity",
+          "description_vi": "Kiểm tra kết nối mạng"
+        },
+        {
+          "command": "netsh wlan show profiles",
+          "description": "Show saved WiFi networks",
+          "description_vi": "Hiển thị mạng WiFi đã lưu"
+        },
+        {
+          "command": "sfc /scannow",
+          "description": "Scan and repair system files",
+          "description_vi": "Quét và sửa chữa file hệ thống"
+        },
+        {
+          "command": "chkdsk /f /r",
+          "description": "Check and repair disk errors",
+          "description_vi": "Kiểm tra và sửa lỗi đĩa"
+        }
+      ],
+      "keyboard_shortcuts": [
+        {
+          "shortcut": "Windows + L",
+          "action": "Lock computer",
+          "action_vi": "Khóa máy tính"
+        },
+        {
+          "shortcut": "Ctrl + Shift + Esc",
+          "action": "Open Task Manager",
+          "action_vi": "Mở Task Manager"
+        },
+        {
+          "shortcut": "Windows + R",
+          "action": "Open Run dialog",
+          "action_vi": "Mở hộp thoại Run"
+        },
+        {
+          "shortcut": "Windows + I",
+          "action": "Open Settings",
+          "action_vi": "Mở Settings"
+        },
+        {
+          "shortcut": "Ctrl + Alt + Delete",
+          "action": "Security options menu",
+          "action_vi": "Menu tùy chọn bảo mật"
+        }
+      ]
+    },
+    "contact_info": {
+      "helpdesk": {
+        "email": "helpdesk@company.com",
+        "phone": "ext. 1234",
+        "portal": "https://helpdesk.company.com",
+        "hours": "Monday-Friday, 8:00 AM - 6:00 PM",
+        "emergency": "24/7 for critical issues"
+      },
+      "sla": {
+        "critical": {
+          "priority": "P1",
+          "response_time": "1 hour",
+          "resolution_time": "4 hours"
+        },
+        "high": {
+          "priority": "P2",
+          "response_time": "4 hours",
+          "resolution_time": "1 business day"
+        },
+        "medium": {
+          "priority": "P3",
+          "response_time": "1 business day",
+          "resolution_time": "3 business days"
+        },
+        "low": {
+          "priority": "P4",
+          "response_time": "2 business days",
+          "resolution_time": "5 business days"
+        }
+      }
+    }
+  }
+}

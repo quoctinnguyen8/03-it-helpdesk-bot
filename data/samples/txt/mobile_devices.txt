@@ -1,0 +1,403 @@
+MOBILE DEVICE TROUBLESHOOTING / SỬA LỖI THIẾT BỊ DI ĐỘNG
+
+==================== SMARTPHONE COMMON ISSUES ====================
+
+English:
+Common smartphone problems and solutions:
+
+1. Battery draining quickly:
+   Android:
+   - Check battery usage: Settings > Battery
+   - Enable battery saver mode
+   - Reduce screen brightness
+   - Turn off location services when not needed
+   - Disable background app refresh
+   - Uninstall battery-draining apps
+   - Clear cache: Settings > Storage > Cached data
+   - Update apps and OS
+
+   iPhone:
+   - Settings > Battery > Battery Health
+   - Enable Low Power Mode
+   - Settings > Privacy > Location Services > While Using
+   - Settings > General > Background App Refresh > Off
+   - Reduce screen brightness and auto-lock time
+   - Check for iOS updates
+
+2. Phone running slow:
+   - Clear cache and temporary files
+   - Uninstall unused apps
+   - Restart phone regularly
+   - Update to latest OS version
+   - Free up storage space (keep 10-15% free)
+   - Disable animations (Developer options on Android)
+   - Factory reset as last resort
+
+3. Cannot connect to WiFi:
+   - Restart phone and router
+   - Forget network and reconnect
+   - Check if WiFi is enabled
+   - Move closer to router
+   - Reset network settings
+   - Update phone software
+   - Check if router firmware is updated
+
+4. Mobile data not working:
+   - Enable mobile data in settings
+   - Enable data roaming if traveling
+   - Check with carrier for service status
+   - Remove and reinsert SIM card
+   - Reset APN settings
+   - Reset network settings
+   - Contact carrier support
+
+5. Apps crashing:
+   - Update app to latest version
+   - Clear app cache and data
+   - Uninstall and reinstall app
+   - Restart phone
+   - Check for OS updates
+   - Check if sufficient storage available
+   - Report to app developer
+
+6. Touch screen not responsive:
+   - Clean screen with microfiber cloth
+   - Remove screen protector if problematic
+   - Restart phone
+   - Boot in safe mode (Android) to test
+   - Factory reset if necessary
+   - Hardware repair if persists
+
+Vietnamese:
+Các vấn đề điện thoại thông minh thường gặp:
+
+1. Pin tụt nhanh:
+   Android:
+   - Kiểm tra mức sử dụng pin: Settings > Battery
+   - Bật chế độ tiết kiệm pin
+   - Giảm độ sáng màn hình
+   - Tắt dịch vụ vị trí khi không dùng
+   - Tắt background app refresh
+   - Gỡ ứng dụng ngốn pin
+   - Xóa cache
+   - Cập nhật apps và OS
+
+   iPhone:
+   - Settings > Battery > Battery Health
+   - Bật Low Power Mode
+   - Settings > Privacy > Location Services
+   - Tắt Background App Refresh
+   - Giảm độ sáng màn hình
+   - Kiểm tra cập nhật iOS
+
+2. Điện thoại chạy chậm:
+   - Xóa cache và file tạm
+   - Gỡ ứng dụng không dùng
+   - Khởi động lại thường xuyên
+   - Cập nhật OS mới nhất
+   - Giải phóng dung lượng
+   - Tắt animations
+   - Factory reset (giải pháp cuối)
+
+3. Không kết nối WiFi:
+   - Khởi động lại điện thoại và router
+   - Quên mạng và kết nối lại
+   - Kiểm tra WiFi có bật không
+   - Di chuyển gần router
+   - Reset cài đặt mạng
+   - Cập nhật phần mềm điện thoại
+   - Kiểm tra firmware router
+
+4. Dữ liệu di động không hoạt động:
+   - Bật mobile data trong settings
+   - Bật data roaming nếu đi du lịch
+   - Kiểm tra với nhà mạng
+   - Tháo và lắp lại SIM
+   - Reset APN settings
+   - Reset cài đặt mạng
+   - Liên hệ nhà mạng
+
+5. Ứng dụng crash:
+   - Cập nhật app lên phiên bản mới nhất
+   - Xóa cache và data của app
+   - Gỡ và cài lại app
+   - Khởi động lại điện thoại
+   - Kiểm tra cập nhật OS
+   - Kiểm tra dung lượng còn đủ không
+   - Báo cáo cho nhà phát triển
+
+6. Màn hình cảm ứng không phản hồi:
+   - Lau màn hình bằng khăn microfiber
+   - Gỡ miếng dán màn hình nếu có vấn đề
+   - Khởi động lại điện thoại
+   - Boot safe mode (Android) để test
+   - Factory reset nếu cần
+   - Sửa phần cứng nếu vẫn còn
+
+==================== ANDROID SPECIFIC ISSUES ====================
+
+English:
+Android-specific troubleshooting:
+
+1. Google Play Store not working:
+   - Clear Play Store cache: Settings > Apps > Google Play Store > Clear cache
+   - Clear Play Store data (will need to log in again)
+   - Update Play Store app
+   - Check date and time settings
+   - Remove and re-add Google account
+   - Check internet connection
+
+2. Cannot download apps:
+   - Check storage space
+   - Check if app is compatible with your Android version
+   - Clear Play Store cache
+   - Restart phone
+   - Check payment method if paid app
+
+3. Android system using too much storage:
+   - Clear system cache (Recovery mode)
+   - Uninstall unused apps
+   - Clear app caches
+   - Move photos/videos to cloud storage
+   - Use Files by Google to clean junk files
+
+4. Notifications not showing:
+   - Settings > Apps > [App] > Notifications > Enable
+   - Disable battery optimization for specific app
+   - Check Do Not Disturb settings
+   - Update app
+   - Clear app cache
+
+5. Safe Mode:
+   - Power off phone
+   - Power on and hold Volume Down
+   - Release when you see Safe Mode
+   - Test issues in Safe Mode
+   - Restart normally to exit Safe Mode
+
+6. Factory Reset (Last Resort):
+   - Backup all data first!
+   - Settings > System > Reset options > Erase all data
+   - Or use hardware buttons (varies by device)
+   - Set up as new device
+
+Vietnamese:
+Khắc phục sự cố riêng Android:
+
+1. Google Play Store không hoạt động:
+   - Xóa cache Play Store
+   - Xóa data Play Store
+   - Cập nhật Play Store
+   - Kiểm tra cài đặt ngày giờ
+   - Gỡ và thêm lại tài khoản Google
+   - Kiểm tra kết nối internet
+
+2. Không tải được ứng dụng:
+   - Kiểm tra dung lượng
+   - Kiểm tra app có tương thích với Android version không
+   - Xóa cache Play Store
+   - Khởi động lại điện thoại
+   - Kiểm tra phương thức thanh toán
+
+3. Android system dùng quá nhiều dung lượng:
+   - Xóa system cache (Recovery mode)
+   - Gỡ ứng dụng không dùng
+   - Xóa app caches
+   - Chuyển ảnh/video lên cloud
+   - Dùng Files by Google để dọn dẹp
+
+4. Thông báo không hiển thị:
+   - Settings > Apps > [App] > Notifications > Bật
+   - Tắt battery optimization cho app cụ thể
+   - Kiểm tra Do Not Disturb
+   - Cập nhật app
+   - Xóa app cache
+
+5. Safe Mode:
+   - Tắt điện thoại
+   - Bật và giữ Volume Down
+   - Thả khi thấy Safe Mode
+   - Test vấn đề trong Safe Mode
+   - Khởi động lại bình thường để thoát
+
+6. Factory Reset (Giải pháp cuối):
+   - Backup tất cả dữ liệu trước!
+   - Settings > System > Reset options > Erase all data
+   - Hoặc dùng nút phần cứng
+   - Thiết lập như thiết bị mới
+
+==================== iPhone SPECIFIC ISSUES ====================
+
+English:
+iPhone-specific troubleshooting:
+
+1. iPhone won't turn on:
+   - Charge for at least 30 minutes
+   - Force restart:
+     * iPhone 8 or later: Press Volume Up, press Volume Down, hold Side button
+     * iPhone 7: Hold Volume Down + Sleep/Wake
+     * iPhone 6s or earlier: Hold Home + Sleep/Wake
+   - Connect to computer and use iTunes/Finder
+   - Recovery mode if needed
+
+2. iCloud storage full:
+   - Settings > [Your Name] > iCloud > Manage Storage
+   - Delete old backups
+   - Reduce photo/video backup
+   - Buy more iCloud storage
+   - Use optimized photo storage
+
+3. Cannot send iMessages:
+   - Settings > Messages > iMessage > Toggle off/on
+   - Sign out and sign back into Apple ID
+   - Check internet connection
+   - Reset network settings
+   - Contact carrier about activating iMessage
+
+4. Face ID/Touch ID not working:
+   - Clean sensors
+   - Remove and re-add face/fingerprint
+   - Update iOS
+   - Restart iPhone
+   - Reset Face ID/Touch ID settings
+
+5. AirDrop not working:
+   - Enable Bluetooth and WiFi
+   - Control Center > AirDrop > Contacts Only or Everyone
+   - Ensure devices are close (within 30 feet)
+   - Restart both devices
+   - Sign out and in to iCloud
+
+6. iPhone stuck on Apple logo:
+   - Force restart
+   - Connect to computer
+   - Use Recovery Mode
+   - Restore with iTunes/Finder
+   - Contact Apple Support if hardware issue
+
+7. iTunes/Finder not recognizing iPhone:
+   - Use original Apple cable
+   - Try different USB port
+   - Restart iPhone and computer
+   - Update iTunes/macOS
+   - Trust this computer on iPhone
+   - Reinstall Apple Mobile Device USB Driver (Windows)
+
+Vietnamese:
+Khắc phục sự cố riêng iPhone:
+
+1. iPhone không bật được:
+   - Sạc ít nhất 30 phút
+   - Force restart:
+     * iPhone 8 trở lên: Nhấn Volume Up, nhấn Volume Down, giữ nút Side
+     * iPhone 7: Giữ Volume Down + Sleep/Wake
+     * iPhone 6s trở xuống: Giữ Home + Sleep/Wake
+   - Kết nối máy tính dùng iTunes/Finder
+   - Recovery mode nếu cần
+
+2. iCloud storage đầy:
+   - Settings > [Tên bạn] > iCloud > Manage Storage
+   - Xóa backup cũ
+   - Giảm backup ảnh/video
+   - Mua thêm dung lượng iCloud
+   - Dùng optimized photo storage
+
+3. Không gửi được iMessages:
+   - Settings > Messages > iMessage > Tắt/bật
+   - Đăng xuất và đăng nhập lại Apple ID
+   - Kiểm tra kết nối internet
+   - Reset cài đặt mạng
+   - Liên hệ nhà mạng về kích hoạt iMessage
+
+4. Face ID/Touch ID không hoạt động:
+   - Làm sạch cảm biến
+   - Gỡ và thêm lại face/fingerprint
+   - Cập nhật iOS
+   - Khởi động lại iPhone
+   - Reset Face ID/Touch ID
+
+5. AirDrop không hoạt động:
+   - Bật Bluetooth và WiFi
+   - Control Center > AirDrop > Contacts Only hoặc Everyone
+   - Đảm bảo thiết bị gần nhau
+   - Khởi động lại cả hai thiết bị
+   - Đăng xuất/nhập iCloud
+
+6. iPhone bị kẹt ở logo Apple:
+   - Force restart
+   - Kết nối máy tính
+   - Dùng Recovery Mode
+   - Restore với iTunes/Finder
+   - Liên hệ Apple Support nếu lỗi phần cứng
+
+7. iTunes/Finder không nhận iPhone:
+   - Dùng cáp Apple chính hãng
+   - Thử cổng USB khác
+   - Khởi động lại iPhone và máy tính
+   - Cập nhật iTunes/macOS
+   - Trust this computer trên iPhone
+   - Cài lại Apple Mobile Device USB Driver
+
+==================== TABLET SPECIFIC ISSUES ====================
+
+English:
+Troubleshooting tablet-specific problems:
+
+1. Touchscreen calibration:
+   - Clean screen thoroughly
+   - Remove screen protector if causing issues
+   - Settings > Display (varies by device)
+   - Use calibration tool if available
+   - Factory reset if necessary
+
+2. Stylus not working:
+   - Replace stylus battery if applicable
+   - Clean stylus tip
+   - Unpair and repair stylus
+   - Update tablet firmware
+   - Check for app-specific stylus settings
+
+3. Cannot connect to PC:
+   - Enable USB debugging (Android tablets)
+   - Use correct cable (data cable, not charging-only)
+   - Install proper drivers on PC
+   - Change USB connection mode (MTP/PTP)
+   - Try different USB port
+
+4. Keyboard not pairing:
+   - Charge keyboard
+   - Reset keyboard (check manual)
+   - Remove and re-pair Bluetooth device
+   - Restart tablet
+   - Update tablet OS
+
+Vietnamese:
+Khắc phục sự cố riêng máy tính bảng:
+
+1. Hiệu chỉnh màn hình cảm ứng:
+   - Lau màn hình kỹ
+   - Gỡ miếng dán màn hình nếu gây vấn đề
+   - Settings > Display
+   - Dùng công cụ calibration nếu có
+   - Factory reset nếu cần
+
+2. Stylus không hoạt động:
+   - Thay pin stylus nếu có
+   - Làm sạch đầu stylus
+   - Unpair và pair lại stylus
+   - Cập nhật firmware tablet
+   - Kiểm tra cài đặt stylus riêng của app
+
+3. Không kết nối được PC:
+   - Bật USB debugging (Android tablets)
+   - Dùng đúng cáp (cáp data, không phải chỉ sạc)
+   - Cài driver đúng trên PC
+   - Đổi chế độ USB connection (MTP/PTP)
+   - Thử cổng USB khác
+
+4. Bàn phím không pair được:
+   - Sạc bàn phím
+   - Reset bàn phím
+   - Gỡ và pair lại Bluetooth
+   - Khởi động lại tablet
+   - Cập nhật tablet OS

@@ -1,0 +1,421 @@
+DATA BACKUP & RECOVERY / SAO LƯU & KHÔI PHỤC DỮ LIỆU
+
+==================== BACKUP STRATEGIES ====================
+
+English:
+Best practices for data backup:
+
+3-2-1 Backup Rule:
+- 3 copies of your data
+- 2 different storage media types
+- 1 offsite backup
+
+Backup types:
+1. Full Backup:
+   - Complete copy of all data
+   - Longest time but easiest to restore
+   - Schedule: Weekly or monthly
+
+2. Incremental Backup:
+   - Only changed files since last backup
+   - Fastest, uses less storage
+   - Schedule: Daily
+
+3. Differential Backup:
+   - Changed files since last full backup
+   - Balance between full and incremental
+   - Schedule: Multiple times per week
+
+Windows Backup Solutions:
+1. File History:
+   - Built-in Windows backup
+   - Settings > Update & Security > Backup
+   - Backs up Documents, Pictures, Desktop, etc.
+   - Requires external drive
+
+2. System Image Backup:
+   - Complete snapshot of Windows installation
+   - Control Panel > Backup and Restore (Windows 7)
+   - Create system image
+   - Store on external drive or network location
+
+3. OneDrive:
+   - Cloud backup for files
+   - 5GB free, upgrade for more
+   - Automatic sync
+   - Access from anywhere
+
+Cloud Backup Services:
+- Backblaze: Unlimited backup, $7/month
+- Carbonite: Personal and business plans
+- Google Drive: 15GB free
+- Dropbox: 2GB free
+- IDrive: 10GB free
+
+Important files to backup:
+- Documents (Word, Excel, PDF)
+- Photos and videos
+- Email data (.pst files for Outlook)
+- Browser bookmarks and passwords
+- Financial records
+- Personal projects
+- Software licenses and product keys
+
+Vietnamese:
+Thực hành tốt nhất về sao lưu dữ liệu:
+
+Quy tắc Sao lưu 3-2-1:
+- 3 bản copy dữ liệu
+- 2 loại phương tiện lưu trữ khác nhau
+- 1 bản sao lưu ngoại tuyến
+
+Các loại sao lưu:
+1. Sao lưu đầy đủ (Full Backup):
+   - Bản copy hoàn chỉnh tất cả dữ liệu
+   - Mất thời gian nhất nhưng dễ khôi phục nhất
+   - Lịch: Hàng tuần hoặc hàng tháng
+
+2. Sao lưu tăng dần (Incremental):
+   - Chỉ file thay đổi kể từ lần sao lưu cuối
+   - Nhanh nhất, dùng ít dung lượng
+   - Lịch: Hàng ngày
+
+3. Sao lưu vi sai (Differential):
+   - File thay đổi kể từ lần sao lưu đầy đủ cuối
+   - Cân bằng giữa full và incremental
+   - Lịch: Nhiều lần mỗi tuần
+
+Giải pháp Backup trên Windows:
+1. File History:
+   - Backup tích hợp Windows
+   - Settings > Update & Security > Backup
+   - Sao lưu Documents, Pictures, Desktop, v.v.
+   - Cần ổ đĩa ngoài
+
+2. System Image Backup:
+   - Snapshot hoàn chỉnh của Windows
+   - Control Panel > Backup and Restore
+   - Tạo system image
+   - Lưu trên ổ ngoài hoặc mạng
+
+3. OneDrive:
+   - Sao lưu cloud cho file
+   - 5GB miễn phí
+   - Đồng bộ tự động
+   - Truy cập từ mọi nơi
+
+Dịch vụ Cloud Backup:
+- Backblaze, Carbonite, Google Drive, Dropbox, IDrive
+
+File quan trọng cần sao lưu:
+- Tài liệu
+- Ảnh và video
+- Dữ liệu email
+- Bookmark và mật khẩu trình duyệt
+- Hồ sơ tài chính
+- Dự án cá nhân
+- License phần mềm
+
+==================== DATA RECOVERY ====================
+
+English:
+Recovering deleted or lost files:
+
+Immediate actions after data loss:
+1. Stop using the drive immediately
+2. Don't install recovery software on the affected drive
+3. Don't format the drive
+4. Don't run CHKDSK or disk repair tools yet
+
+Recovery methods:
+
+1. Recycle Bin:
+   - Check Recycle Bin first
+   - Right-click > Restore deleted items
+
+2. File History (if enabled):
+   - Right-click folder > Properties > Previous Versions
+   - Select version and restore
+
+3. OneDrive Recycle Bin:
+   - OneDrive.com > Recycle bin
+   - Files kept for 30 days
+
+4. Shadow Copies:
+   - Right-click drive > Properties > Previous Versions
+   - Restore files from system restore points
+
+5. Data Recovery Software:
+   Free options:
+   - Recuva: User-friendly, effective
+   - TestDisk: Advanced, command-line
+   - PhotoRec: Recover photos and files
+   
+   Paid options:
+   - EaseUS Data Recovery Wizard
+   - Stellar Data Recovery
+   - R-Studio: Professional level
+
+6. Professional Recovery Services:
+   - For physical drive damage
+   - Expensive ($300-$3000+)
+   - Higher success rate for physical failures
+   - Use as last resort
+
+Recovery tips:
+- Act quickly (higher success rate)
+- Scan thoroughly (deep scan takes longer but finds more)
+- Recover to different drive
+- Don't overwrite original location
+
+Preventing data loss:
+- Regular backups (automated)
+- Use cloud storage
+- Enable File History
+- Keep system updated
+- Use reliable hardware
+- Have surge protector
+- Monitor drive health with CrystalDiskInfo
+
+Vietnamese:
+Khôi phục file bị xóa hoặc mất:
+
+Hành động ngay sau khi mất dữ liệu:
+1. Ngừng sử dụng ổ đĩa ngay lập tức
+2. Không cài phần mềm khôi phục trên ổ bị ảnh hưởng
+3. Không format ổ đĩa
+4. Chưa chạy CHKDSK hay công cụ sửa đĩa
+
+Phương pháp khôi phục:
+
+1. Thùng Rác:
+   - Kiểm tra Thùng Rác trước
+   - Click phải > Khôi phục
+
+2. File History (nếu đã bật):
+   - Click phải thư mục > Properties > Previous Versions
+   - Chọn phiên bản và khôi phục
+
+3. OneDrive Recycle Bin:
+   - OneDrive.com > Thùng rác
+   - File giữ trong 30 ngày
+
+4. Shadow Copies:
+   - Click phải ổ đĩa > Properties > Previous Versions
+   - Khôi phục từ system restore points
+
+5. Phần mềm Khôi phục Dữ liệu:
+   Miễn phí:
+   - Recuva: Thân thiện, hiệu quả
+   - TestDisk: Nâng cao, dòng lệnh
+   - PhotoRec: Khôi phục ảnh và file
+   
+   Trả phí:
+   - EaseUS Data Recovery Wizard
+   - Stellar Data Recovery
+   - R-Studio: Chuyên nghiệp
+
+6. Dịch vụ Khôi phục Chuyên nghiệp:
+   - Cho hỏng hóc vật lý
+   - Đắt ($300-$3000+)
+   - Tỷ lệ thành công cao cho lỗi vật lý
+   - Sử dụng như giải pháp cuối cùng
+
+Mẹo khôi phục:
+- Hành động nhanh
+- Quét kỹ (deep scan mất thời gian nhưng tìm được nhiều hơn)
+- Khôi phục ra ổ khác
+- Không ghi đè vị trí gốc
+
+Phòng ngừa mất dữ liệu:
+- Sao lưu định kỳ (tự động)
+- Dùng cloud storage
+- Bật File History
+- Cập nhật hệ thống
+- Dùng phần cứng đáng tin cậy
+- Có bộ chống sét
+- Theo dõi sức khỏe ổ đĩa
+
+==================== WINDOWS RESTORE POINTS ====================
+
+English:
+Using System Restore:
+
+Creating restore point:
+1. Search "Create a restore point"
+2. Click "Create" button
+3. Name your restore point
+4. Click "Create"
+
+Restoring Windows:
+1. Search "Create a restore point"
+2. Click "System Restore" button
+3. Choose restore point
+4. Click "Next" and "Finish"
+5. Computer will restart and restore
+
+Important notes:
+- Restore doesn't affect personal files
+- Recently installed programs will be removed
+- Driver changes will be reverted
+- Create restore point before major changes
+- Keep at least 3-5 restore points
+
+Enable System Protection:
+1. Search "Create a restore point"
+2. Select drive (C:)
+3. Click "Configure"
+4. Turn on system protection
+5. Allocate disk space (5-10% recommended)
+
+When to create restore point:
+- Before Windows updates
+- Before installing new software
+- Before making system changes
+- Before updating drivers
+- Monthly as routine maintenance
+
+Vietnamese:
+Sử dụng System Restore:
+
+Tạo restore point:
+1. Tìm "Create a restore point"
+2. Click nút "Create"
+3. Đặt tên restore point
+4. Click "Create"
+
+Khôi phục Windows:
+1. Tìm "Create a restore point"
+2. Click nút "System Restore"
+3. Chọn restore point
+4. Click "Next" và "Finish"
+5. Máy tính sẽ khởi động lại và khôi phục
+
+Lưu ý quan trọng:
+- Restore không ảnh hưởng file cá nhân
+- Chương trình cài gần đây sẽ bị gỡ
+- Thay đổi driver sẽ bị hoàn tác
+- Tạo restore point trước khi thay đổi lớn
+- Giữ ít nhất 3-5 restore points
+
+Bật System Protection:
+1. Tìm "Create a restore point"
+2. Chọn ổ đĩa (C:)
+3. Click "Configure"
+4. Bật system protection
+5. Cấp phát dung lượng (khuyến nghị 5-10%)
+
+Khi nào tạo restore point:
+- Trước khi update Windows
+- Trước khi cài phần mềm mới
+- Trước khi thay đổi hệ thống
+- Trước khi cập nhật drivers
+- Hàng tháng như bảo trì thường xuyên
+
+==================== DISK CLONING & MIGRATION ====================
+
+English:
+Cloning and migrating to new drive:
+
+Why clone:
+- Upgrade to larger drive
+- Migrate HDD to SSD
+- Create exact backup
+- Replace failing drive
+
+Cloning software:
+Free options:
+- Macrium Reflect Free: User-friendly
+- Clonezilla: Open-source, powerful
+- EaseUS Todo Backup Free: Simple interface
+
+Paid options:
+- Acronis True Image: Professional
+- Paragon Hard Disk Manager
+- AOMEI Backupper Professional
+
+Steps to clone drive:
+1. Connect new drive (via USB adapter or install internally)
+2. Install cloning software
+3. Select source drive (old drive)
+4. Select destination drive (new drive)
+5. Start cloning process
+6. Wait for completion (hours for large drives)
+7. Shut down computer
+8. Replace old drive with new drive
+9. Boot from new drive
+
+Important considerations:
+- Destination drive must be equal or larger in size
+- All data on destination will be erased
+- Don't interrupt cloning process
+- Verify clone completed successfully before removing old drive
+- Keep old drive as backup initially
+
+Migrating to SSD:
+Additional benefits:
+- Much faster boot times
+- Faster application loading
+- Better system responsiveness
+- Lower power consumption
+- No moving parts (more reliable)
+
+After migration:
+- Verify all files and programs work
+- Update drive firmware
+- Enable TRIM for SSDs
+- Check BIOS/UEFI boot order
+- Benchmark new drive to confirm performance
+
+Vietnamese:
+Sao chép và di chuyển sang ổ mới:
+
+Tại sao clone:
+- Nâng cấp sang ổ lớn hơn
+- Chuyển từ HDD sang SSD
+- Tạo backup chính xác
+- Thay ổ sắp hỏng
+
+Phần mềm cloning:
+Miễn phí:
+- Macrium Reflect Free
+- Clonezilla
+- EaseUS Todo Backup Free
+
+Trả phí:
+- Acronis True Image
+- Paragon Hard Disk Manager
+- AOMEI Backupper Professional
+
+Các bước clone ổ đĩa:
+1. Kết nối ổ mới
+2. Cài phần mềm cloning
+3. Chọn ổ nguồn (ổ cũ)
+4. Chọn ổ đích (ổ mới)
+5. Bắt đầu quá trình cloning
+6. Đợi hoàn thành
+7. Tắt máy tính
+8. Thay ổ cũ bằng ổ mới
+9. Boot từ ổ mới
+
+Lưu ý quan trọng:
+- Ổ đích phải bằng hoặc lớn hơn ổ nguồn
+- Tất cả dữ liệu trên ổ đích sẽ bị xóa
+- Không ngắt quá trình cloning
+- Xác minh clone thành công trước khi gỡ ổ cũ
+- Giữ ổ cũ như backup ban đầu
+
+Di chuyển sang SSD:
+Lợi ích bổ sung:
+- Khởi động nhanh hơn nhiều
+- Ứng dụng tải nhanh hơn
+- Hệ thống phản hồi tốt hơn
+- Tiêu thụ điện ít hơn
+- Không có bộ phận chuyển động (đáng tin cậy hơn)
+
+Sau khi di chuyển:
+- Xác minh tất cả file và chương trình hoạt động
+- Cập nhật firmware ổ đĩa
+- Bật TRIM cho SSD
+- Kiểm tra thứ tự boot trong BIOS/UEFI
+- Benchmark ổ mới để xác nhận hiệu suất

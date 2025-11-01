@@ -1,0 +1,251 @@
+NETWORK TROUBLESHOOTING GUIDE / HƯỚNG DẪN SỬA LỖI MẠNG
+
+==================== NO INTERNET CONNECTION ====================
+
+English:
+When you have "No Internet Access" or "Limited Connectivity":
+
+Step 1: Check Physical Connections
+- Ensure all cables are properly connected
+- Check if router lights are normal (power, internet, WiFi indicators)
+- Try different Ethernet cable if using wired connection
+
+Step 2: Restart Network Devices
+- Power cycle your modem: unplug for 30 seconds, plug back in
+- Power cycle your router: unplug for 30 seconds, plug back in
+- Restart your computer
+
+Step 3: Check IP Configuration
+- Open Command Prompt
+- Run: ipconfig /all
+- Check if you have a valid IP address (not 169.254.x.x)
+- If IP starts with 169.254, run: ipconfig /release, then ipconfig /renew
+
+Step 4: Test Connectivity
+- Ping your router: ping 192.168.1.1 (or your router IP)
+- Ping Google DNS: ping 8.8.8.8
+- Ping a website: ping google.com
+
+Step 5: DNS Issues
+- Try changing DNS servers to Google DNS or Cloudflare:
+  Primary DNS: 8.8.8.8 (Google) or 1.1.1.1 (Cloudflare)
+  Secondary DNS: 8.8.4.4 (Google) or 1.0.0.1 (Cloudflare)
+
+Vietnamese:
+Khi gặp lỗi "Không có kết nối Internet" hoặc "Kết nối hạn chế":
+
+Bước 1: Kiểm tra kết nối vật lý
+- Đảm bảo tất cả dây cáp được cắm đúng
+- Kiểm tra đèn router (nguồn, internet, WiFi)
+- Thử dây mạng khác nếu dùng kết nối dây
+
+Bước 2: Khởi động lại thiết bị mạng
+- Tắt nguồn modem: rút điện 30 giây, cắm lại
+- Tắt nguồn router: rút điện 30 giây, cắm lại
+- Khởi động lại máy tính
+
+Bước 3: Kiểm tra cấu hình IP
+- Mở Command Prompt
+- Chạy: ipconfig /all
+- Kiểm tra địa chỉ IP hợp lệ (không phải 169.254.x.x)
+- Nếu IP bắt đầu bằng 169.254, chạy: ipconfig /release, sau đó ipconfig /renew
+
+Bước 4: Test kết nối
+- Ping router: ping 192.168.1.1 (hoặc IP router của bạn)
+- Ping Google DNS: ping 8.8.8.8
+- Ping website: ping google.com
+
+Bước 5: Vấn đề DNS
+- Thử đổi DNS server sang Google hoặc Cloudflare:
+  DNS chính: 8.8.8.8 (Google) hoặc 1.1.1.1 (Cloudflare)
+  DNS phụ: 8.8.4.4 (Google) hoặc 1.0.0.1 (Cloudflare)
+
+==================== SLOW INTERNET SPEED ====================
+
+English:
+Reasons for slow internet and solutions:
+
+1. Too many connected devices
+   - Disconnect unused devices from network
+   - Prioritize important devices using QoS settings on router
+
+2. WiFi interference
+   - Change WiFi channel in router settings
+   - Move closer to router
+   - Use 5GHz band instead of 2.4GHz if available
+   - Remove physical obstacles between device and router
+
+3. Background applications consuming bandwidth
+   - Check Task Manager > Performance > Network
+   - Close unnecessary applications
+   - Pause cloud sync services (OneDrive, Google Drive, Dropbox)
+   - Stop Windows Update temporarily
+
+4. ISP throttling or issues
+   - Run speed test: speedtest.net
+   - Contact ISP if speed is much lower than subscribed plan
+   - Check for service outages in your area
+
+5. Outdated router firmware
+   - Log into router admin panel
+   - Check for firmware updates
+   - Update to latest version
+
+6. Malware or viruses
+   - Run full antivirus scan
+   - Check for suspicious processes in Task Manager
+
+Vietnamese:
+Nguyên nhân internet chậm và giải pháp:
+
+1. Quá nhiều thiết bị kết nối
+   - Ngắt kết nối các thiết bị không dùng
+   - Ưu tiên thiết bị quan trọng qua cài đặt QoS trên router
+
+2. Nhiễu WiFi
+   - Đổi kênh WiFi trong cài đặt router
+   - Di chuyển gần router hơn
+   - Dùng băng tần 5GHz thay vì 2.4GHz nếu có
+   - Loại bỏ vật cản giữa thiết bị và router
+
+3. Ứng dụng nền chiếm băng thông
+   - Kiểm tra Task Manager > Performance > Network
+   - Đóng các ứng dụng không cần thiết
+   - Tạm dừng dịch vụ đồng bộ cloud (OneDrive, Google Drive, Dropbox)
+   - Tạm dừng Windows Update
+
+4. ISP điều tiết hoặc có sự cố
+   - Chạy test tốc độ: speedtest.net
+   - Liên hệ ISP nếu tốc độ thấp hơn gói đăng ký nhiều
+   - Kiểm tra sự cố dịch vụ trong khu vực
+
+5. Firmware router lỗi thời
+   - Đăng nhập vào trang quản trị router
+   - Kiểm tra cập nhật firmware
+   - Cập nhật lên phiên bản mới nhất
+
+6. Malware hoặc virus
+   - Quét toàn bộ hệ thống bằng antivirus
+   - Kiểm tra tiến trình đáng ngờ trong Task Manager
+
+==================== CANNOT ACCESS SPECIFIC WEBSITES ====================
+
+English:
+If you can access some websites but not others:
+
+1. Clear browser cache and cookies
+   - Chrome: Ctrl+Shift+Delete
+   - Edge: Ctrl+Shift+Delete
+   - Firefox: Ctrl+Shift+Delete
+
+2. Flush DNS cache
+   - Open Command Prompt as Administrator
+   - Run: ipconfig /flushdns
+   - Restart browser
+
+3. Check hosts file
+   - Navigate to: C:\Windows\System32\drivers\etc\hosts
+   - Open with Notepad (as Administrator)
+   - Look for entries blocking websites
+   - Remove unwanted entries
+
+4. Disable proxy settings
+   - Settings > Network & Internet > Proxy
+   - Turn off "Use a proxy server"
+
+5. Try different DNS servers
+   - Use Google DNS (8.8.8.8, 8.8.4.4)
+   - Use Cloudflare DNS (1.1.1.1, 1.0.0.1)
+
+6. Check if website is down
+   - Use isitdownrightnow.com
+   - Try accessing from different device or network
+
+7. Disable VPN temporarily
+   - VPN can block certain websites
+   - Try disconnecting VPN
+
+Vietnamese:
+Nếu truy cập được một số trang web nhưng không truy cập được các trang khác:
+
+1. Xóa cache và cookies trình duyệt
+   [Tương tự phần tiếng Anh]
+
+2. Xóa DNS cache
+   - Mở Command Prompt với quyền Administrator
+   - Chạy: ipconfig /flushdns
+   - Khởi động lại trình duyệt
+
+3. Kiểm tra file hosts
+   - Đi tới: C:\Windows\System32\drivers\etc\hosts
+   - Mở bằng Notepad (với quyền Administrator)
+   - Tìm các mục chặn website
+   - Xóa các mục không mong muốn
+
+4. Tắt cài đặt proxy
+   - Settings > Network & Internet > Proxy
+   - Tắt "Use a proxy server"
+
+5. Thử DNS server khác
+   - Dùng Google DNS (8.8.8.8, 8.8.4.4)
+   - Dùng Cloudflare DNS (1.1.1.1, 1.0.0.1)
+
+6. Kiểm tra xem website có bị down không
+   - Dùng isitdownrightnow.com
+   - Thử truy cập từ thiết bị hoặc mạng khác
+
+7. Tắt VPN tạm thời
+   - VPN có thể chặn một số website
+   - Thử ngắt kết nối VPN
+
+==================== VPN CONNECTION ISSUES ====================
+
+English:
+Troubleshooting VPN connectivity problems:
+
+1. Basic checks:
+   - Verify VPN credentials (username/password)
+   - Check if VPN service is active
+   - Ensure stable internet connection before connecting VPN
+
+2. Firewall or antivirus blocking:
+   - Temporarily disable firewall
+   - Add VPN application to firewall exceptions
+   - Check antivirus settings
+
+3. VPN protocol issues:
+   - Try different VPN protocols (OpenVPN, IKEv2, L2TP, PPTP)
+   - Some networks block certain protocols
+
+4. DNS leaks:
+   - Use DNS leak test websites
+   - Configure VPN to use custom DNS servers
+
+5. Network adapter issues:
+   - Uninstall and reinstall VPN software
+   - Reset network adapters
+
+Vietnamese:
+Khắc phục sự cố kết nối VPN:
+
+1. Kiểm tra cơ bản:
+   - Xác minh thông tin đăng nhập VPN (username/password)
+   - Kiểm tra dịch vụ VPN có hoạt động không
+   - Đảm bảo kết nối internet ổn định trước khi kết nối VPN
+
+2. Firewall hoặc antivirus chặn:
+   - Tạm thời tắt firewall
+   - Thêm ứng dụng VPN vào danh sách ngoại lệ firewall
+   - Kiểm tra cài đặt antivirus
+
+3. Vấn đề giao thức VPN:
+   - Thử các giao thức VPN khác (OpenVPN, IKEv2, L2TP, PPTP)
+   - Một số mạng chặn một số giao thức nhất định
+
+4. DNS leaks:
+   - Dùng website test DNS leak
+   - Cấu hình VPN sử dụng DNS server tùy chỉnh
+
+5. Vấn đề network adapter:
+   - Gỡ và cài lại phần mềm VPN
+   - Reset network adapters

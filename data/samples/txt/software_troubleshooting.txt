@@ -1,0 +1,271 @@
+SOFTWARE TROUBLESHOOTING GUIDE / HƯỚNG DẪN SỬA LỖI PHẦN MỀM
+
+==================== APPLICATION CRASHES / FREEZES ====================
+
+English:
+When applications crash or freeze frequently:
+
+1. Update the application
+   - Check for updates in the app or on developer's website
+   - Install the latest version
+
+2. Compatibility mode
+   - Right-click application shortcut > Properties
+   - Go to Compatibility tab
+   - Check "Run this program in compatibility mode"
+   - Select Windows version (Windows 7, 8, etc.)
+
+3. Run as Administrator
+   - Right-click application > Run as administrator
+   - Or set permanently in Properties > Compatibility tab
+
+4. Check Event Viewer for error details
+   - Windows Key + X > Event Viewer
+   - Look in Windows Logs > Application
+   - Find errors related to the crashing application
+
+5. Repair or reinstall
+   - Settings > Apps > Apps & features
+   - Select the application
+   - Click "Modify" or "Repair" if available
+   - Or uninstall completely and reinstall fresh
+
+6. Clear application cache/data
+   - Delete temporary files in %TEMP%
+   - Clear application-specific cache folders
+   - Usually in C:\Users\[Username]\AppData\
+
+7. Check system requirements
+   - Ensure your PC meets minimum requirements
+   - Update graphics drivers for games or design software
+
+Vietnamese:
+Khi ứng dụng crash hoặc đơ thường xuyên:
+
+1. Cập nhật ứng dụng
+   - Kiểm tra cập nhật trong ứng dụng hoặc trang web nhà phát triển
+   - Cài đặt phiên bản mới nhất
+
+2. Chế độ tương thích
+   - Click phải shortcut ứng dụng > Properties
+   - Vào tab Compatibility
+   - Tích "Run this program in compatibility mode"
+   - Chọn phiên bản Windows (Windows 7, 8, v.v.)
+
+3. Chạy với quyền Administrator
+   - Click phải ứng dụng > Run as administrator
+   - Hoặc cài đặt vĩnh viễn trong Properties > tab Compatibility
+
+4. Kiểm tra Event Viewer để xem chi tiết lỗi
+   - Windows Key + X > Event Viewer
+   - Xem trong Windows Logs > Application
+   - Tìm lỗi liên quan đến ứng dụng bị crash
+
+5. Sửa chữa hoặc cài đặt lại
+   - Settings > Apps > Apps & features
+   - Chọn ứng dụng
+   - Click "Modify" hoặc "Repair" nếu có
+   - Hoặc gỡ cài đặt hoàn toàn và cài lại
+
+6. Xóa cache/data ứng dụng
+   - Xóa file tạm trong %TEMP%
+   - Xóa thư mục cache riêng của ứng dụng
+   - Thường trong C:\Users\[Username]\AppData\
+
+7. Kiểm tra yêu cầu hệ thống
+   - Đảm bảo PC đáp ứng yêu cầu tối thiểu
+   - Cập nhật driver card màn hình cho game hoặc phần mềm thiết kế
+
+==================== MICROSOFT OFFICE ISSUES ====================
+
+English:
+Common Microsoft Office problems and solutions:
+
+1. Office won't activate
+   - Ensure you're signed in with correct Microsoft account
+   - Run Office activation troubleshooter
+   - Uninstall and reinstall Office
+   - Check subscription status
+
+2. Word/Excel not responding
+   - Start in Safe Mode: Hold Ctrl while opening app
+   - Disable add-ins: File > Options > Add-ins
+   - Repair Office: Control Panel > Programs > Microsoft Office > Change > Repair
+
+3. Cannot open files
+   - File may be corrupted: Try "Open and Repair" option
+   - Check file extension compatibility
+   - Unblock file: Right-click > Properties > Unblock
+   - Update Office to latest version
+
+4. Formatting issues
+   - Reset formatting: Ctrl+Space (character) or Ctrl+Q (paragraph)
+   - Check compatibility mode
+   - Save as new file format (.docx instead of .doc)
+
+5. Auto-save not working
+   - Check OneDrive sync status
+   - Ensure file is in OneDrive folder
+   - Check AutoRecover settings: File > Options > Save
+
+Vietnamese:
+Các vấn đề Microsoft Office thường gặp:
+
+1. Office không kích hoạt được
+   - Đảm bảo đăng nhập đúng tài khoản Microsoft
+   - Chạy Office activation troubleshooter
+   - Gỡ và cài lại Office
+   - Kiểm tra trạng thái subscription
+
+2. Word/Excel không phản hồi
+   - Khởi động Safe Mode: Giữ Ctrl khi mở ứng dụng
+   - Tắt add-ins: File > Options > Add-ins
+   - Sửa chữa Office: Control Panel > Programs > Microsoft Office > Change > Repair
+
+3. Không mở được file
+   - File có thể bị hỏng: Thử tùy chọn "Open and Repair"
+   - Kiểm tra tương thích phần mở rộng file
+   - Bỏ chặn file: Click phải > Properties > Unblock
+   - Cập nhật Office lên phiên bản mới nhất
+
+4. Vấn đề định dạng
+   - Reset formatting: Ctrl+Space (ký tự) hoặc Ctrl+Q (đoạn văn)
+   - Kiểm tra chế độ tương thích
+   - Lưu dưới dạng file format mới (.docx thay vì .doc)
+
+5. Auto-save không hoạt động
+   - Kiểm tra trạng thái đồng bộ OneDrive
+   - Đảm bảo file trong thư mục OneDrive
+   - Kiểm tra cài đặt AutoRecover: File > Options > Save
+
+==================== BROWSER ISSUES ====================
+
+English:
+Troubleshooting web browser problems:
+
+1. Browser running slow
+   - Clear cache and cookies
+   - Disable unnecessary extensions
+   - Update browser to latest version
+   - Reset browser settings
+   - Check for malware
+
+2. Pages not loading properly
+   - Clear browser cache: Ctrl+Shift+Delete
+   - Disable extensions one by one to identify culprit
+   - Try incognito/private mode
+   - Reset browser settings
+   - Check internet connection
+
+3. Extensions not working
+   - Update extensions
+   - Remove and reinstall problematic extension
+   - Check extension permissions
+   - Try different browser
+
+4. Browser keeps crashing
+   - Update browser
+   - Disable hardware acceleration: Settings > Advanced > System
+   - Clear browsing data
+   - Create new browser profile
+   - Scan for malware
+
+5. Cannot download files
+   - Check download folder permissions
+   - Clear download history
+   - Disable antivirus temporarily
+   - Try different browser
+   - Check available disk space
+
+Vietnamese:
+Khắc phục sự cố trình duyệt web:
+
+1. Trình duyệt chạy chậm
+   - Xóa cache và cookies
+   - Tắt các extension không cần thiết
+   - Cập nhật trình duyệt lên phiên bản mới nhất
+   - Reset cài đặt trình duyệt
+   - Kiểm tra malware
+
+2. Trang web không tải đúng
+   - Xóa cache trình duyệt: Ctrl+Shift+Delete
+   - Tắt từng extension để tìm nguyên nhân
+   - Thử chế độ incognito/private
+   - Reset cài đặt trình duyệt
+   - Kiểm tra kết nối internet
+
+3. Extension không hoạt động
+   - Cập nhật extensions
+   - Gỡ và cài lại extension có vấn đề
+   - Kiểm tra quyền của extension
+   - Thử trình duyệt khác
+
+4. Trình duyệt crash liên tục
+   - Cập nhật trình duyệt
+   - Tắt hardware acceleration: Settings > Advanced > System
+   - Xóa dữ liệu duyệt web
+   - Tạo profile trình duyệt mới
+   - Quét malware
+
+5. Không tải được file
+   - Kiểm tra quyền thư mục download
+   - Xóa lịch sử download
+   - Tạm thời tắt antivirus
+   - Thử trình duyệt khác
+   - Kiểm tra dung lượng đĩa khả dụng
+
+==================== PRINTER SOFTWARE ISSUES ====================
+
+English:
+Fixing printer-related software problems:
+
+1. Printer not detected
+   - Reinstall printer drivers
+   - Use Windows built-in driver
+   - Run printer troubleshooter: Settings > Devices > Printers
+   - Check USB port or network connection
+
+2. Print jobs stuck in queue
+   - Open Services: services.msc
+   - Stop "Print Spooler" service
+   - Delete files in: C:\Windows\System32\spool\PRINTERS
+   - Start "Print Spooler" service again
+
+3. Cannot print from specific application
+   - Set correct default printer
+   - Update application
+   - Print to PDF first, then print PDF
+   - Reinstall application
+
+4. Poor print quality
+   - Run printer head cleaning utility
+   - Check ink/toner levels
+   - Update printer firmware
+   - Adjust print quality settings
+
+Vietnamese:
+Sửa lỗi phần mềm liên quan đến máy in:
+
+1. Không phát hiện máy in
+   - Cài lại driver máy in
+   - Dùng driver tích hợp sẵn của Windows
+   - Chạy printer troubleshooter: Settings > Devices > Printers
+   - Kiểm tra cổng USB hoặc kết nối mạng
+
+2. Lệnh in bị kẹt trong hàng đợi
+   - Mở Services: services.msc
+   - Dừng dịch vụ "Print Spooler"
+   - Xóa file trong: C:\Windows\System32\spool\PRINTERS
+   - Khởi động lại dịch vụ "Print Spooler"
+
+3. Không in được từ ứng dụng cụ thể
+   - Đặt đúng máy in mặc định
+   - Cập nhật ứng dụng
+   - In ra PDF trước, sau đó in PDF
+   - Cài lại ứng dụng
+
+4. Chất lượng in kém
+   - Chạy tiện ích làm sạch đầu in
+   - Kiểm tra mức mực/toner
+   - Cập nhật firmware máy in
+   - Điều chỉnh cài đặt chất lượng in

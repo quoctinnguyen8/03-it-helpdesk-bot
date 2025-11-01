@@ -1,0 +1,311 @@
+HARDWARE TROUBLESHOOTING GUIDE / HƯỚNG DẪN SỬA LỖI PHẦN CỨNG
+
+==================== COMPUTER WON'T TURN ON ====================
+
+English:
+When your computer won't power on:
+
+1. Check power supply
+   - Ensure power cable is properly connected
+   - Check if wall outlet is working (test with another device)
+   - Try different power cable
+   - Check if power supply switch is ON (desktop PC)
+
+2. Battery issues (Laptop)
+   - Remove battery, press power button for 30 seconds (discharge residual power)
+   - Plug in AC adapter without battery, try to boot
+   - Try different AC adapter if available
+   - Check if battery is properly seated
+
+3. Hardware component issues
+   - Listen for beep codes during boot (indicates specific hardware failure)
+   - Check if fans are spinning
+   - Reseat RAM modules
+   - Check if all internal cables are connected properly
+
+4. Display issues vs. power issues
+   - Check if power LED lights up
+   - Listen for hard drive/fan sounds
+   - Try connecting external monitor
+   - Computer might be on but display is not working
+
+Vietnamese:
+Khi máy tính không khởi động được:
+
+1. Kiểm tra nguồn điện
+   - Đảm bảo dây nguồn được cắm đúng
+   - Kiểm tra ổ cắm điện có hoạt động không (test với thiết bị khác)
+   - Thử dây nguồn khác
+   - Kiểm tra công tắc nguồn có BẬT không (PC để bàn)
+
+2. Vấn đề pin (Laptop)
+   - Tháo pin, nhấn nút nguồn 30 giây (xả điện dư)
+   - Cắm sạc mà không có pin, thử khởi động
+   - Thử sạc khác nếu có
+   - Kiểm tra pin có lắp đúng không
+
+3. Vấn đề linh kiện phần cứng
+   - Nghe tiếng beep khi khởi động (cho biết lỗi phần cứng cụ thể)
+   - Kiểm tra quạt có quay không
+   - Lắp lại RAM
+   - Kiểm tra các cáp bên trong được kết nối đúng chưa
+
+4. Phân biệt lỗi màn hình và lỗi nguồn
+   - Kiểm tra đèn LED nguồn có sáng không
+   - Nghe tiếng ổ cứng/quạt
+   - Thử kết nối màn hình ngoài
+   - Máy có thể đang bật nhưng màn hình không hoạt động
+
+==================== OVERHEATING ISSUES ====================
+
+English:
+Dealing with overheating computers:
+
+1. Symptoms of overheating:
+   - Computer shuts down unexpectedly
+   - Loud fan noise
+   - Slow performance
+   - Hot to touch
+   - BSOD errors
+
+2. Immediate solutions:
+   - Ensure proper ventilation
+   - Clean dust from vents and fans
+   - Use laptop on hard, flat surface (not bed or lap)
+   - Use cooling pad for laptops
+
+3. Long-term solutions:
+   - Clean internal components (desktop)
+   - Replace thermal paste on CPU/GPU
+   - Replace faulty fans
+   - Improve case airflow (add more fans)
+   - Check if CPU cooler is properly mounted
+
+4. Software solutions:
+   - Update BIOS
+   - Check for malware causing high CPU usage
+   - Monitor temperatures using HWMonitor or Core Temp
+   - Adjust power settings (reduce maximum processor state)
+
+Vietnamese:
+Xử lý máy tính bị quá nhiệt:
+
+1. Triệu chứng quá nhiệt:
+   - Máy tự động tắt đột ngột
+   - Tiếng quạt ồn
+   - Hiệu suất chậm
+   - Nóng khi chạm vào
+   - Lỗi màn hình xanh
+
+2. Giải pháp tức thì:
+   - Đảm bảo thông gió tốt
+   - Làm sạch bụi từ khe thoát nhiệt và quạt
+   - Dùng laptop trên bề mặt cứng, phẳng (không phải giường hoặc đùi)
+   - Dùng đế tản nhiệt cho laptop
+
+3. Giải pháp lâu dài:
+   - Làm sạch linh kiện bên trong (PC để bàn)
+   - Thay keo tản nhiệt trên CPU/GPU
+   - Thay quạt bị hỏng
+   - Cải thiện luồng khí trong case (thêm quạt)
+   - Kiểm tra CPU cooler có lắp đúng không
+
+4. Giải pháp phần mềm:
+   - Cập nhật BIOS
+   - Kiểm tra malware gây CPU usage cao
+   - Theo dõi nhiệt độ bằng HWMonitor hoặc Core Temp
+   - Điều chỉnh cài đặt nguồn (giảm maximum processor state)
+
+==================== HARD DRIVE / SSD ISSUES ====================
+
+English:
+Diagnosing and fixing storage drive problems:
+
+1. Signs of failing hard drive:
+   - Clicking or grinding noises
+   - Frequent freezing
+   - Corrupted files
+   - Slow file access
+   - Bad sector errors
+   - Computer won't boot
+
+2. Check drive health:
+   - Use CrystalDiskInfo to check SMART status
+   - Run CHKDSK: chkdsk C: /f /r
+   - Use manufacturer's diagnostic tool (WD Data Lifeguard, SeaTools, etc.)
+
+3. Backup important data immediately:
+   - If drive is failing, backup ASAP
+   - Use cloud storage or external drive
+   - Stop using drive if making unusual noises
+
+4. Fix bad sectors:
+   - Run CHKDSK with /r parameter
+   - Use manufacturer's repair tools
+   - If too many bad sectors, replace drive
+
+5. SSD-specific issues:
+   - Update firmware
+   - Check for trim support
+   - Don't defragment SSDs
+   - Monitor write cycles with SSD tools
+
+6. Drive not detected:
+   - Check cable connections
+   - Try different SATA port
+   - Check in Disk Management
+   - Initialize disk if new drive
+   - Assign drive letter
+
+Vietnamese:
+Chẩn đoán và sửa lỗi ổ đĩa:
+
+1. Dấu hiệu ổ cứng sắp hỏng:
+   - Tiếng kêu lạch cạch hoặc nghiến
+   - Đơ máy thường xuyên
+   - File bị hỏng
+   - Truy cập file chậm
+   - Lỗi bad sector
+   - Máy không khởi động được
+
+2. Kiểm tra sức khỏe ổ đĩa:
+   - Dùng CrystalDiskInfo kiểm tra trạng thái SMART
+   - Chạy CHKDSK: chkdsk C: /f /r
+   - Dùng công cụ chẩn đoán của nhà sản xuất
+
+3. Sao lưu dữ liệu quan trọng ngay:
+   - Nếu ổ đĩa đang hỏng, backup ngay lập tức
+   - Dùng cloud storage hoặc ổ ngoài
+   - Ngừng sử dụng ổ nếu có tiếng kêu bất thường
+
+4. Sửa bad sectors:
+   - Chạy CHKDSK với tham số /r
+   - Dùng công cụ sửa chữa của nhà sản xuất
+   - Nếu quá nhiều bad sector, thay ổ mới
+
+5. Vấn đề riêng với SSD:
+   - Cập nhật firmware
+   - Kiểm tra hỗ trợ trim
+   - Không defragment SSD
+   - Theo dõi chu kỳ ghi bằng công cụ SSD
+
+6. Không phát hiện ổ đĩa:
+   - Kiểm tra kết nối cáp
+   - Thử cổng SATA khác
+   - Kiểm tra trong Disk Management
+   - Initialize disk nếu là ổ mới
+   - Gán ký tự ổ đĩa
+
+==================== RAM ISSUES ====================
+
+English:
+Memory (RAM) problems and solutions:
+
+1. Symptoms of bad RAM:
+   - Frequent BSOD (especially MEMORY_MANAGEMENT error)
+   - Random crashes
+   - Computer freezes
+   - Corrupted files
+   - Programs crashing
+   - Computer won't boot
+
+2. Test RAM:
+   - Windows Memory Diagnostic: search "Windows Memory Diagnostic"
+   - MemTest86: boot from USB, run extensive test (6+ hours)
+   - Test one stick at a time to isolate faulty module
+
+3. Fix RAM issues:
+   - Reseat RAM modules (remove and reinsert firmly)
+   - Clean contacts with eraser
+   - Try RAM in different slots
+   - Update BIOS
+   - Check if RAM is compatible with motherboard
+   - Replace faulty RAM module
+
+4. Insufficient RAM:
+   - Close unnecessary programs
+   - Increase virtual memory (pagefile)
+   - Upgrade RAM capacity
+   - Check Task Manager > Performance > Memory usage
+
+Vietnamese:
+Vấn đề và giải pháp về RAM:
+
+1. Triệu chứng RAM bị lỗi:
+   - Màn hình xanh thường xuyên (đặc biệt lỗi MEMORY_MANAGEMENT)
+   - Crash ngẫu nhiên
+   - Máy đơ
+   - File bị hỏng
+   - Chương trình crash
+   - Máy không khởi động được
+
+2. Test RAM:
+   - Windows Memory Diagnostic: tìm "Windows Memory Diagnostic"
+   - MemTest86: boot từ USB, chạy test kỹ (6+ giờ)
+   - Test từng thanh một để tìm thanh bị lỗi
+
+3. Sửa lỗi RAM:
+   - Lắp lại RAM (tháo và cắm lại chắc chắn)
+   - Làm sạch chân tiếp xúc bằng tẩy
+   - Thử RAM ở các slot khác
+   - Cập nhật BIOS
+   - Kiểm tra RAM có tương thích với mainboard không
+   - Thay RAM bị lỗi
+
+4. RAM không đủ:
+   - Đóng các chương trình không cần thiết
+   - Tăng virtual memory (pagefile)
+   - Nâng cấp dung lượng RAM
+   - Kiểm tra Task Manager > Performance > Memory usage
+
+==================== USB DEVICE NOT RECOGNIZED ====================
+
+English:
+Fixing USB device detection issues:
+
+1. Basic troubleshooting:
+   - Try different USB port
+   - Restart computer
+   - Try device on another computer
+   - Check if device needs external power
+
+2. Update/reinstall USB drivers:
+   - Device Manager > Universal Serial Bus controllers
+   - Right-click each USB device > Update driver
+   - Or uninstall and restart to reinstall
+
+3. Fix USB ports:
+   - Check for bent pins
+   - Clean USB port with compressed air
+   - Disable USB selective suspend: Power Options > Change plan settings > USB settings
+
+4. Registry fix (Advanced):
+   - Open Registry Editor (regedit)
+   - Navigate to: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{36FC9E60-C465-11CF-8056-444553540000}
+   - Delete UpperFilters and LowerFilters (if present)
+   - Restart computer
+
+Vietnamese:
+Sửa lỗi không nhận thiết bị USB:
+
+1. Khắc phục cơ bản:
+   - Thử cổng USB khác
+   - Khởi động lại máy tính
+   - Thử thiết bị trên máy khác
+   - Kiểm tra thiết bị có cần nguồn ngoài không
+
+2. Cập nhật/cài lại USB drivers:
+   - Device Manager > Universal Serial Bus controllers
+   - Click phải từng thiết bị USB > Update driver
+   - Hoặc gỡ cài đặt và khởi động lại để cài lại
+
+3. Sửa cổng USB:
+   - Kiểm tra chân cắm có bị cong không
+   - Làm sạch cổng USB bằng khí nén
+   - Tắt USB selective suspend: Power Options > Change plan settings > USB settings
+
+4. Sửa Registry (Nâng cao):
+   - Mở Registry Editor (regedit)
+   - Đi tới: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{36FC9E60-C465-11CF-8056-444553540000}
+   - Xóa UpperFilters và LowerFilters (nếu có)
+   - Khởi động lại máy tính
