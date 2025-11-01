@@ -78,11 +78,18 @@ class KnowledgeChatUI:
                     overflow-y: auto;
                 }
             """,
+            js="""
+                function focusInput() {
+                    const textbox = document.querySelector('textarea[placeholder*="Type your message"]');
+                    if (textbox) {
+                        setTimeout(() => textbox.focus(), 100);
+                    }
+                }
+            """,
         ) as demo:
             gr.Markdown("<h1 id='title'>IT Helpdesk Bot</h1>")
             gr.Markdown(
-                "<p id='subtitle'>Upload IT troubleshooting documents and chat with AI — powered by RAG | "
-                "Hỗ trợ tiếng Việt & English</p>"
+                "<p id='subtitle'>Upload IT troubleshooting documents and chat with AI — powered by RAG</p>"
             )
 
             with gr.Tabs():
@@ -91,48 +98,48 @@ class KnowledgeChatUI:
                 # =============================================================
                 with gr.TabItem("📁 Import Documents"):
                     gr.Markdown("### Step 1: Upload documents to build the knowledge base.")
-                    gr.Markdown("_Supported formats: TXT, PDF, Markdown (.md), JSON | Định dạng hỗ trợ: TXT, PDF, Markdown (.md), JSON_")
-                    gr.Markdown("_Supported languages: English, Vietnamese | Hỗ trợ: Tiếng Anh, Tiếng Việt_")
-                    
+                    gr.Markdown("_Supported formats: TXT, PDF, Markdown (.md), JSON_")
+                    gr.Markdown("_Supported languages: English, Vietnamese_")
+
                     file_input = gr.File(
                         file_types=[".txt", ".pdf", ".md", ".markdown", ".json"],
                         file_count="multiple",
-                        label="Upload files (TXT, PDF, MD, JSON) | Tải lên file (TXT, PDF, MD, JSON)",
+                        label="Upload files (TXT, PDF, MD, JSON)",
                     )
-                    import_status = gr.Markdown("ℹ️ _Waiting for files... | Đang chờ file..._")
+                    import_status = gr.Markdown("ℹ️ _Waiting for files..._")
                     import_progress = gr.Progress()
                     file_table = gr.DataFrame(
                         headers=["File Name"],
-                        label="Imported Documents | Tài liệu đã nhập",
+                        label="Imported Documents",
                         interactive=False,
                     )
 
                     def import_files(files, progress=gr.Progress()):
                         """Handle file upload and document import with progress bar."""
                         if not files:
-                            return "⚠️ Please upload at least one file. | Vui lòng tải lên ít nhất một file.", None
+                            return "⚠️ Please upload at least one file.", None
                         
                         try:
                             paths = [f.name for f in files]
                             self._uploaded_files = [f.name.split("/")[-1].split("\\")[-1] for f in files]
                             
                             # Show progress for import process
-                            progress(0, desc="Starting import... | Bắt đầu nhập...")
+                            progress(0, desc="Starting import...")
                             time.sleep(0.5)
                             
-                            progress(0.2, desc="Loading documents... | Đang tải tài liệu...")
+                            progress(0.2, desc="Loading documents...")
                             time.sleep(0.3)
                             
-                            progress(0.4, desc="Chunking text... | Đang chia nhỏ văn bản...")
+                            progress(0.4, desc="Chunking text...")
                             time.sleep(0.3)
                             
-                            progress(0.6, desc="Generating embeddings... | Đang tạo embeddings...")
+                            progress(0.6, desc="Generating embeddings...")
                             self._import_use_case.invoke(paths)
                             
-                            progress(0.9, desc="Storing in database... | Đang lưu vào database...")
+                            progress(0.9, desc="Storing in database...")
                             time.sleep(0.3)
                             
-                            progress(1.0, desc="Import completed! | Hoàn thành!")
+                            progress(1.0, desc="Import completed!")
                             
                             table_data = [[name] for name in self._uploaded_files]
                             return (
@@ -142,7 +149,7 @@ class KnowledgeChatUI:
                             )
                         # pylint: disable=broad-exception-caught
                         except Exception as e:
-                            return f"❌ Error while importing files: {str(e)} | Lỗi khi nhập file: {str(e)}", None
+                            return f"❌ Error while importing files: {str(e)}", None
 
                     file_input.change(  # pylint: disable=no-member
                         fn=import_files,
@@ -155,22 +162,23 @@ class KnowledgeChatUI:
                 # =============================================================
                 with gr.TabItem("💬 Chat with AI"):
                     gr.Markdown("### Step 2: Start chatting with your IT Helpdesk AI assistant!")
-                    gr.Markdown("_Ask questions in English or Vietnamese | Hỏi bằng tiếng Anh hoặc tiếng Việt_")
+                    gr.Markdown("_Ask questions in English or Vietnamese")
 
                     chat_box = gr.Chatbot(
-                        label="Chat Window | Cửa sổ chat",
+                        label="Chat Window",
                         elem_classes=["chatbox"],
-                        height=400,
+                        height=350,
                     )
 
-                    user_input = gr.Textbox(
-                        placeholder="Type your message and press Enter... | Nhập tin nhắn và nhấn Enter...",
-                        label="Your Message | Tin nhắn của bạn",
-                        lines=2,
-                    )
-
-                    send_button = gr.Button("🚀 Send | Gửi", variant="primary")
-                    clear_button = gr.Button("🧹 Clear Chat | Xóa chat", variant="secondary")
+                    with gr.Row():
+                        user_input = gr.Textbox(
+                            placeholder="Type your message here... (Press Enter to send)",
+                            label="Your Message",
+                            lines=1,
+                            autofocus=True,
+                        )
+                    send_button = gr.Button("🚀 Send", variant="primary")
+                    clear_button = gr.Button("🧹 Clear Chat", variant="secondary")
 
                     # ------------------ Chat Logic with Streaming ------------------
                     def chat_stream(user_message: str, history: List[List[str]]) -> Generator:
@@ -204,7 +212,7 @@ class KnowledgeChatUI:
                         # pylint: disable=broad-exception-caught
                         except Exception as e:
                             history.append(
-                                ["🧑‍💬 " + user_message, f"❌ Error | Lỗi: {str(e)}"]
+                                ["🧑‍💬 " + user_message, f"❌ Error while processing: {str(e)}"]
                             )
                             yield history
 
@@ -213,7 +221,22 @@ class KnowledgeChatUI:
                         self._messages.clear()
                         return []
 
-                    # Bind events
+                    # Bind events - Use submit_btn to control Enter behavior
+                    chat_interface = user_input.submit(  # pylint: disable=no-member
+                        fn=chat_stream,
+                        inputs=[user_input, chat_box],
+                        outputs=chat_box,
+                    ).then(
+                        fn=lambda: "",  # Clear input after sending
+                        inputs=None,
+                        outputs=user_input,
+                    ).then(
+                        fn=None,
+                        inputs=None,
+                        outputs=None,
+                        js="focusInput",  # Refocus on input box
+                    )
+
                     send_button.click(  # pylint: disable=no-member
                         fn=chat_stream,
                         inputs=[user_input, chat_box],
@@ -222,16 +245,11 @@ class KnowledgeChatUI:
                         fn=lambda: "",  # Clear input after sending
                         inputs=None,
                         outputs=user_input,
-                    )
-
-                    user_input.submit(  # pylint: disable=no-member
-                        fn=chat_stream,
-                        inputs=[user_input, chat_box],
-                        outputs=chat_box,
                     ).then(
-                        fn=lambda: "",  # Clear input after sending
+                        fn=None,
                         inputs=None,
-                        outputs=user_input,
+                        outputs=None,
+                        js="focusInput",  # Refocus on input box
                     )
 
                     clear_button.click(  # pylint: disable=no-member

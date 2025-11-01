@@ -110,7 +110,7 @@ class ChatUseCase:
         filtered_docs = self._filter_relevant_docs(retrieved_docs, query_text)
         if not filtered_docs["documents"] or not filtered_docs["documents"][0]:
             ai_text = (
-                "I'm sorry, I could not find relevant information in the knowledge base."
+                "Xin lỗi, tôi không thể tìm thấy thông tin liên quan. (I'm sorry, I could not find relevant information in the knowledge base.)"
             )
             return Message(type=MessageType.AI, content=ai_text)
 
